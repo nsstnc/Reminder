@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reminder.MainPage">
+
+
+    <StackLayout>
+        <Entry 
+            Placeholder = "Запрос" x:Name="RequestField" FontFamily="Helvetica"
+                FontSize="22" MaxLength ="100" />
+        <Button
+            Text="Отправить"
+            Clicked="Send_Request"/>
+        <Label
+            x:Name="Answer"
+            FontAutoScalingEnabled="True"
+            Text="Ответ на запрос"/>
+    </StackLayout>
+
+</ContentPage>
